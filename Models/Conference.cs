@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ConferenceBarrel.Models
+namespace EFCoreStudy.Models
 {
     public class Conference
     {

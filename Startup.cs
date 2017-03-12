@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
-namespace ConferenceBarrel
+using EFCoreStudy.WeaponModels;
+
+namespace EFCoreStudy
 {
     public class Startup
     {
@@ -29,6 +32,11 @@ namespace ConferenceBarrel
         {
             // Add framework services.
             services.AddMvc();
+
+            // Create connection
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=MyTestDB; Trust_Connection=True;";
+            services.AddDbContext<AppDBContext>(options=>options.UsSqlServer(connection));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

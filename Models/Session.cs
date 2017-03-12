@@ -1,4 +1,4 @@
-namespace ConferenceBarrel.Models
+namespace EFCoreStudy.Models
 {
     public class Session
     {

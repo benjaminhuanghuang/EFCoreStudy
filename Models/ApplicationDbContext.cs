@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ConferenceBarrel.Models
+namespace EFCoreStudy.Models
 {
     public class ApplicationDbContext : DbContext{
         public DbSet<Conference> Conferences { get; set; }

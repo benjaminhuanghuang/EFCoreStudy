@@ -15,5 +15,6 @@ $ dotnet ef migrations update
 $ dotnet ef database drop        # drop database
 
 ## Commands
+$ dotnet ef -f                   # help
 $ dotnet ef database update      # update database
 $ dotnet ef migrations add <migration name>

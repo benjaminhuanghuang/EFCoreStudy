@@ -35,7 +35,7 @@ namespace EFCoreStudy
 
             // Create connection
             var connection = @"Server=(localdb)\mssqllocaldb;Database=MyTestDB; Trust_Connection=True;";
-            services.AddDbContext<AppDBContext>(options=>options.UsSqlServer(connection));
+            services.AddDbContext<AppDBContext>(options=>options.UseSqlServer(connection));
 
         }
 

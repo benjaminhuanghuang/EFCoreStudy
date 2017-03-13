@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ConferenceBarrel.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ConferenceBarrel.Controllers
+using EFCoreStudy.Models;
+namespace EFCoreStudy.Controllers
 {
 
     public class HomeController : Controller

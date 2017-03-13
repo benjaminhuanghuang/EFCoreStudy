@@ -20,15 +20,10 @@ Ctl(CMD)+shit+p
 
 ## Add reference
 Add dependency in .csproj (.net core 1.1)        
-<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version= "1.1.1"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version= "1.1.1"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version= "1.1.1"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version= "1.1.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version= "1.0.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version= "1.1.1"/>
 
-And tools in .csproj
-<ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" />
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
-  </ItemGroup>
+
+## Install EF Core Command Line Tools
+    https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet
+

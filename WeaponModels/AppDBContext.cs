@@ -10,7 +10,7 @@ namespace EFCoreStudy.WeaponModels
 
     public class WeaponModels{
         [Key]
-        [D]
+        [D ]
         public int Id{get;set;}
         public string Name { get; set; }
 
